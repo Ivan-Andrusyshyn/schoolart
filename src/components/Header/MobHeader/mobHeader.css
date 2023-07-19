@@ -1,0 +1,51 @@
+.icon-button {
+  color: #ffffff;
+  margin: 0;
+}
+.app-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: white;
+}
+.menu {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 0;
+}
+.icon-mob-menu {
+  color: #ffffff;
+  margin: 0;
+}
+.menu-item {
+  margin: 0;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #964b00, #ff0000);
+  display: block;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  color: #ffffff;
+}
+.mob-menu-text {
+  color: #ffffff;
+  margin: 5px;
+}
+.menu-item:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu-item .icon {
+  margin-right: 8px;
+}
