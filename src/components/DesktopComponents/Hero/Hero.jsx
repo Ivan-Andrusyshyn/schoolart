@@ -14,13 +14,14 @@ export const Hero = () => {
     },
     {
       image: image2,
-      title: "Верес навколо",
-      subtitle: "Студія творчості",
+      title: "Студія ліплення та гончарства",
+      subtitle: "(для дітей та дорослих)",
     },
     {
       image: image3,
+
       title: "Верес навколо",
-      subtitle: "Студія творчості",
+      subtitle: "Студія малюнку та живопису",
     },
   ];
 
@@ -45,6 +46,7 @@ export const Hero = () => {
           className={`slide ${index === currentSlide ? "active-slide" : ""}`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
+          <div className="overlay"></div>
           <div className="slide-content">
             <h1 className="hero-title">{slide.title}</h1>
             <p className="hero-subtitle">{slide.subtitle}</p>
