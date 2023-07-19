@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/schoolart/static/css/main.abd2a770.css",
-    "main.js": "/schoolart/static/js/main.169005e1.js",
+    "main.js": "/schoolart/static/js/main.6b3e8c38.js",
     "index.html": "/schoolart/index.html",
     "main.abd2a770.css.map": "/schoolart/static/css/main.abd2a770.css.map",
-    "main.169005e1.js.map": "/schoolart/static/js/main.169005e1.js.map"
+    "main.6b3e8c38.js.map": "/schoolart/static/js/main.6b3e8c38.js.map"
   },
   "entrypoints": [
     "static/css/main.abd2a770.css",
-    "static/js/main.169005e1.js"
+    "static/js/main.6b3e8c38.js"
   ]
 }
