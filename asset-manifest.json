@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/schoolart/static/css/main.abd2a770.css",
-    "main.js": "/schoolart/static/js/main.6b3e8c38.js",
+    "main.css": "/schoolart/static/css/main.11435f94.css",
+    "main.js": "/schoolart/static/js/main.e0d0e8f0.js",
+    "static/media/gonchar1.jpg": "/schoolart/static/media/gonchar1.466c24989479459c7b6f.jpg",
+    "static/media/gonchar3.jpg": "/schoolart/static/media/gonchar3.a26cd63fdc4450aa984d.jpg",
+    "static/media/majster-klas-goncharnogo-mystecztva-dlya-dvoh-01.jpg": "/schoolart/static/media/majster-klas-goncharnogo-mystecztva-dlya-dvoh-01.b77abc58851ea1bf181f.jpg",
+    "static/media/photo_2023-07-19_22-26-15.jpg": "/schoolart/static/media/photo_2023-07-19_22-26-15.fba919c8b777badfa6ad.jpg",
     "index.html": "/schoolart/index.html",
-    "main.abd2a770.css.map": "/schoolart/static/css/main.abd2a770.css.map",
-    "main.6b3e8c38.js.map": "/schoolart/static/js/main.6b3e8c38.js.map"
+    "main.11435f94.css.map": "/schoolart/static/css/main.11435f94.css.map",
+    "main.e0d0e8f0.js.map": "/schoolart/static/js/main.e0d0e8f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.abd2a770.css",
-    "static/js/main.6b3e8c38.js"
+    "static/css/main.11435f94.css",
+    "static/js/main.e0d0e8f0.js"
   ]
 }
