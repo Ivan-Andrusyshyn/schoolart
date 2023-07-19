@@ -28,7 +28,7 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
       <Typography
         variant="h6"
         component="div"
-        style={{ fontSize: 20, color: "#ffffff", display: "flex", gap: 10 }}
+        style={{ fontSize: 24, color: "#ffffff", display: "flex", gap: 10 }}
       >
         <span style={{ color: "#ff0000ca" }}>
           <PaletteIcon style={{ fontSize: 30, verticalAlign: "middle" }} />
