@@ -34,7 +34,7 @@ export const Header = () => {
                 gap: 10,
               }}
             >
-              <div style={{ width: 130, height: 80, display: "flex" }}>
+              <div style={{ width: 130, height: 60, display: "flex" }}>
                 <img src={logo} alt="" style={{ width: "100%" }} />
               </div>
             </Typography>
