@@ -55,26 +55,42 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
         style={{ padding: 0 }}
       >
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link to="home" className="menu-link" style={{ display: "flex" }}>
+          <Link
+            to="home"
+            className="menu-link"
+            style={{ display: "flex", textDecoration: "none" }}
+          >
             <HomeIcon className="icon-mob-menu" />
             <p className="mob-menu-text">Головна</p>
           </Link>
         </MenuItem>
 
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link to="services" className="menu-link" style={{ display: "flex" }}>
+          <Link
+            to="services"
+            className="menu-link"
+            style={{ display: "flex", textDecoration: "none" }}
+          >
             <MonetizationOnIcon className="icon-mob-menu" />
             <p className="mob-menu-text">Послуги та ціни</p>
           </Link>
         </MenuItem>
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link to="contacts" className="menu-link" style={{ display: "flex" }}>
+          <Link
+            to="contacts"
+            className="menu-link"
+            style={{ display: "flex", textDecoration: "none" }}
+          >
             <ContactPhoneIcon className="icon-mob-menu" />
             <p className="mob-menu-text">Контакти</p>
           </Link>
         </MenuItem>
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link to="about" className="menu-link" style={{ display: "flex" }}>
+          <Link
+            to="about"
+            className="menu-link"
+            style={{ display: "flex", textDecoration: "none" }}
+          >
             <InfoIcon className="icon-mob-menu" />
             <p className="mob-menu-text">Про нас</p>
           </Link>
