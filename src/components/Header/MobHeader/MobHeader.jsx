@@ -1,18 +1,20 @@
-import { Icon } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
-import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
-import { blue, orange, green } from "@mui/material/colors";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { blue } from "@mui/material/colors";
 import "./mobHeader.css";
 import "../header.css";
-import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import PaletteIcon from "@mui/icons-material/Palette";
 import Typography from "@mui/material/Typography";
-
+import { IconButton } from "@mui/material";
+import InfoIcon from "@mui/icons-material/Info";
+import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
+import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import "./mobHeader.css";
+import "../header.css";
 export const MobHeader = ({ setAnchorEl, anchorEl }) => {
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -20,11 +22,7 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
-  const LinkButton = ({ icon, label }) => (
-    <IconButton aria-label={label} sx={{ color: blue[500] }}>
-      {icon}
-    </IconButton>
-  );
+
   return (
     <div className="app-container">
       <Typography
@@ -54,23 +52,32 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
         open={Boolean(anchorEl)}
         onClose={handleMenuClose}
         className="menu"
+        style={{ padding: 0 }}
       >
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <HomeIcon className="icon-mob-menu" />
-          <p className="mob-menu-text">Головна</p>
+          <Link to="home" className="menu-link" style={{ display: "flex" }}>
+            <HomeIcon className="icon-mob-menu" />
+            <p className="mob-menu-text">Головна</p>
+          </Link>
         </MenuItem>
 
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <MonetizationOnIcon className="icon-mob-menu" />
-          <p className="mob-menu-text">Ціни</p>
+          <Link to="services" className="menu-link" style={{ display: "flex" }}>
+            <MonetizationOnIcon className="icon-mob-menu" />
+            <p className="mob-menu-text">Послуги та ціни</p>
+          </Link>
         </MenuItem>
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <ContactPhoneIcon className="icon-mob-menu" />
-          <p className="mob-menu-text">Контакти</p>
+          <Link to="contacts" className="menu-link" style={{ display: "flex" }}>
+            <ContactPhoneIcon className="icon-mob-menu" />
+            <p className="mob-menu-text">Контакти</p>
+          </Link>
         </MenuItem>
         <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <InfoIcon className="icon-mob-menu" />
-          <p className="mob-menu-text">Про нас</p>
+          <Link to="about" className="menu-link" style={{ display: "flex" }}>
+            <InfoIcon className="icon-mob-menu" />
+            <p className="mob-menu-text">Про нас</p>
+          </Link>
         </MenuItem>
       </Menu>
     </div>

@@ -21,7 +21,14 @@ export const Header = () => {
 
   return (
     <div className="header-section">
-      <Toolbar>
+      <Toolbar
+        style={{
+          maxWidth: 1240,
+          margin: "0 auto",
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         {isMobile ? (
           <MobHeader setAnchorEl={setAnchorEl} anchorEl={anchorEl ?? null} />
         ) : (
