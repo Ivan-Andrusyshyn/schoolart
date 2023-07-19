@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/schoolart/static/css/main.8755cd32.css",
+    "main.js": "/schoolart/static/js/main.98b13778.js",
+    "index.html": "/schoolart/index.html",
+    "main.8755cd32.css.map": "/schoolart/static/css/main.8755cd32.css.map",
+    "main.98b13778.js.map": "/schoolart/static/js/main.98b13778.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8755cd32.css",
+    "static/js/main.98b13778.js"
+  ]
+}
