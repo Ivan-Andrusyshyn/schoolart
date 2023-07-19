@@ -17,7 +17,6 @@ import { MobHeader } from "./MobHeader/MobHeader";
 export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const [anchorEl, setAnchorEl] = React.useState(null);
 
   return (
     <div className="header-section">
@@ -30,7 +29,7 @@ export const Header = () => {
         }}
       >
         {isMobile ? (
-          <MobHeader setAnchorEl={setAnchorEl} anchorEl={anchorEl ?? null} />
+          <MobHeader />
         ) : (
           <div className="nav-menu-desk">
             <Typography

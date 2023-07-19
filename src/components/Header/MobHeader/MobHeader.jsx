@@ -1,28 +1,23 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { blue } from "@mui/material/colors";
+import { useEffect, useState } from "react";
 import "./mobHeader.css";
+import React from "react";
 import "../header.css";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import HomeIcon from "@mui/icons-material/Home";
 import PaletteIcon from "@mui/icons-material/Palette";
 import Typography from "@mui/material/Typography";
-import { IconButton } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
-import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
+import { Icon, IconButton } from "@mui/material";
 import "./mobHeader.css";
 import "../header.css";
-export const MobHeader = ({ setAnchorEl, anchorEl }) => {
+import { MenuLinks } from "./MenuLinks";
+export const MobHeader = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [colorActual, setColorActual] = useState("#fff");
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
+  useEffect(() => {
+    setColorActual("#c4da00");
+  }, [anchorEl]);
   return (
     <div className="app-container">
       <Typography
@@ -38,7 +33,6 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
             Art
           </span>
           <span style={{ color: "#c4da00" }} className="mob-title-header">
-            {" "}
             school
           </span>
         </div>
@@ -52,55 +46,13 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
       >
         <MenuIcon />
       </IconButton>
-      <Menu
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleMenuClose}
-        className="menu"
-        style={{ padding: 0 }}
-      >
-        <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link
-            to="home"
-            className="menu-link"
-            style={{ display: "flex", textDecoration: "none" }}
-          >
-            <HomeIcon className="icon-mob-menu" />
-            <p className="mob-menu-text">Головна</p>
-          </Link>
-        </MenuItem>
 
-        <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link
-            to="services"
-            className="menu-link"
-            style={{ display: "flex", textDecoration: "none" }}
-          >
-            <MonetizationOnIcon className="icon-mob-menu" />
-            <p className="mob-menu-text">Послуги та ціни</p>
-          </Link>
-        </MenuItem>
-        <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link
-            to="contacts"
-            className="menu-link"
-            style={{ display: "flex", textDecoration: "none" }}
-          >
-            <ContactPhoneIcon className="icon-mob-menu" />
-            <p className="mob-menu-text">Контакти</p>
-          </Link>
-        </MenuItem>
-        <MenuItem className="menu-item" onClick={handleMenuClose}>
-          <Link
-            to="about"
-            className="menu-link"
-            style={{ display: "flex", textDecoration: "none" }}
-          >
-            <InfoIcon className="icon-mob-menu" />
-            <p className="mob-menu-text">Про нас</p>
-          </Link>
-        </MenuItem>
-      </Menu>
+      <MenuLinks
+        colorActual={colorActual}
+        anchorEl={anchorEl}
+        setAnchorEl={setAnchorEl}
+        setColorActual={setColorActual}
+      />
     </div>
   );
 };
