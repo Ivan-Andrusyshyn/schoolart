@@ -7,6 +7,7 @@ import PaletteIcon from "@mui/icons-material/Palette";
 import Typography from "@mui/material/Typography";
 import { Icon, IconButton } from "@mui/material";
 import "./mobHeader.css";
+import logo from "../../../image/photo_2023-07-19_22-26-15.jpg";
 import "../header.css";
 import { MenuLinks } from "./MenuLinks";
 export const MobHeader = () => {
@@ -25,16 +26,8 @@ export const MobHeader = () => {
         component="div"
         style={{ fontSize: 24, color: "#ffffff", display: "flex", gap: 10 }}
       >
-        <span style={{ color: "#ff0000ca" }}>
-          <PaletteIcon style={{ fontSize: 30, verticalAlign: "middle" }} />
-        </span>
-        <div>
-          <span style={{ color: "#0077ff" }} className="mob-title-header">
-            Art
-          </span>
-          <span style={{ color: "#c4da00" }} className="mob-title-header">
-            school
-          </span>
+        <div style={{ width: 100, height: 60, display: "flex" }}>
+          <img src={logo} alt="" style={{ width: "100%" }} />
         </div>
       </Typography>
       <IconButton
@@ -44,7 +37,7 @@ export const MobHeader = () => {
         style={{ color: "#fff" }}
         onClick={handleMenuOpen}
       >
-        <MenuIcon />
+        <MenuIcon style={{ fontSize: 34 }} />
       </IconButton>
 
       <MenuLinks

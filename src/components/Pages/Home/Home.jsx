@@ -1,3 +1,5 @@
+import { Hero } from "../../DesktopComponents/Hero/Hero";
+
 export const Home = () => {
-  return <h2>Тут інфа яка буде одразу при завантаженні першою</h2>;
+  return <Hero />;
 };

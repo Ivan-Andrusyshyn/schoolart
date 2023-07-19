@@ -1,10 +1,14 @@
 .header-section {
   padding: 0 94px;
-  background-image: linear-gradient(to right, #964b00, #ff0000);
+  background-image: linear-gradient(to left, #964b00, #008600);
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 @import url("../../fonts.css");
-
+p {
+  margin: 0;
+  padding: 0;
+}
 @media (max-width: 640px) {
   .header-section {
     padding: 8px 20px;
@@ -13,6 +17,8 @@
 .title-header-desc {
   font-family: "Lumanosimo", cursive;
   font-weight: 700;
+  line-height: normal;
+  font-size: 28px;
 }
 .nav-menu-desk {
   display: flex;
@@ -54,11 +60,29 @@
   bottom: -2px;
   width: 0;
   height: 3px;
-  background-image: linear-gradient(to right, #def5ebc2, #f7570d);
+  background-image: linear-gradient(to right, #00ff00, #00bfff);
+
   transition: width 0.2s ease;
 }
 
 .list_item_title:hover::after,
 .list_item_title:focus::after {
   width: 100%;
+}
+@media (max-width: 768px) {
+  .header-section {
+    padding: 8px 20px;
+  }
+
+  .list-nav {
+    gap: 40px;
+  }
+
+  .title-header-desc {
+    font-size: 24px;
+  }
+
+  .list_item_title {
+    font-size: 16px;
+  }
 }

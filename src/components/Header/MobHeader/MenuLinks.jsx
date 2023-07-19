@@ -15,7 +15,6 @@ export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
   };
   const [activeLink, setActiveLink] = useState("home");
   const { pathname } = useLocation();
-  console.log(pathname);
   useEffect(() => {
     if (pathname === "/home") {
       setActiveLink("/home");
@@ -43,7 +42,7 @@ export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
             textDecoration: "none",
           }}
         >
-          <HomeIcon className="icon-mob-menu" style={{ color: "#0077ff" }} />
+          <HomeIcon className="icon-mob-menu" style={{ color: "#4bc413" }} />
           <p
             className="mob-menu-text"
             style={{ color: activeLink === "/home" ? "#c4da00" : "#fff" }}
@@ -102,7 +101,7 @@ export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
             className="mob-menu-text"
             style={{ color: activeLink === "/about" ? "#c4da00" : "#fff" }}
           >
-            Про нас
+            Про студію
           </p>
         </Link>
       </MenuItem>

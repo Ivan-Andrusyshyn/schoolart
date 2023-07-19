@@ -2,18 +2,10 @@ import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
 import { useMediaQuery, useTheme } from "@mui/material";
-import PaletteIcon from "@mui/icons-material/Palette";
-import { Icon } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
-import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
-import ContactPhoneIcon from "@mui/icons-material/ContactPhone";
 import "./header.css";
 import { MobHeader } from "./MobHeader/MobHeader";
+import logo from "../../image/photo_2023-07-19_22-26-15.jpg";
 export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -22,7 +14,7 @@ export const Header = () => {
     <div className="header-section">
       <Toolbar
         style={{
-          maxWidth: 1240,
+          maxWidth: 1180,
           margin: "0 auto",
           display: "flex",
           justifyContent: "space-between",
@@ -42,34 +34,17 @@ export const Header = () => {
                 gap: 10,
               }}
             >
-              <span style={{ color: "#ff0000ca" }}>
-                <PaletteIcon
-                  style={{ fontSize: 32, verticalAlign: "middle" }}
-                />
-              </span>
-              <div>
-                <span
-                  style={{ color: "#0077ff" }}
-                  className="title-header-desc"
-                >
-                  Art
-                </span>
-                <span
-                  style={{ color: "#c4da00" }}
-                  className="title-header-desc"
-                >
-                  {" "}
-                  school
-                </span>
+              <div style={{ width: 130, height: 80, display: "flex" }}>
+                <img src={logo} alt="" style={{ width: "100%" }} />
               </div>
             </Typography>
 
             <ul className="list-nav">
               <li className="nav_list_item">
-                <p className="list_item_title">Про нас</p>
+                <p className="list_item_title">Про студію</p>
               </li>
               <li className="nav_list_item">
-                <p className="list_item_title">Ціни</p>
+                <p className="list_item_title"> Послуги та ціни</p>
               </li>
               <li className="nav_list_item">
                 <p className="list_item_title">Контакти</p>

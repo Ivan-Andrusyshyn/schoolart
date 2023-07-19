@@ -29,7 +29,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-image: linear-gradient(to right, #964b00, #ff0000);
+  background-image: linear-gradient(to left, #964b00, #008600);
   padding: 12px 16px;
   color: #ffffff;
   font-size: 16px;
