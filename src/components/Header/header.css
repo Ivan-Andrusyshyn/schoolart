@@ -3,13 +3,17 @@
   background-image: linear-gradient(to right, #964b00, #ff0000);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+@import url("../../fonts.css");
 
 @media (max-width: 640px) {
   .header-section {
-    padding: 0 16px;
+    padding: 8px 20px;
   }
 }
-
+.title-header-desc {
+  font-family: "Lumanosimo", cursive;
+  font-weight: 700;
+}
 .nav-menu-desk {
   display: flex;
   width: 100%;

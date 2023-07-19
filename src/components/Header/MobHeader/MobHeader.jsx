@@ -34,8 +34,13 @@ export const MobHeader = ({ setAnchorEl, anchorEl }) => {
           <PaletteIcon style={{ fontSize: 30, verticalAlign: "middle" }} />
         </span>
         <div>
-          <span style={{ color: "#0077ff" }}>Art</span>
-          <span style={{ color: "#c4da00" }}> school</span>
+          <span style={{ color: "#0077ff" }} className="mob-title-header">
+            Art
+          </span>
+          <span style={{ color: "#c4da00" }} className="mob-title-header">
+            {" "}
+            school
+          </span>
         </div>
       </Typography>
       <IconButton

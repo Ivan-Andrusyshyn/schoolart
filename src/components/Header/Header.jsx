@@ -49,8 +49,19 @@ export const Header = () => {
                 />
               </span>
               <div>
-                <span style={{ color: "#0077ff" }}>Art</span>
-                <span style={{ color: "#c4da00" }}> school</span>
+                <span
+                  style={{ color: "#0077ff" }}
+                  className="title-header-desc"
+                >
+                  Art
+                </span>
+                <span
+                  style={{ color: "#c4da00" }}
+                  className="title-header-desc"
+                >
+                  {" "}
+                  school
+                </span>
               </div>
             </Typography>
 
