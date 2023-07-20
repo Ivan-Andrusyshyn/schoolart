@@ -113,7 +113,7 @@ export const Contacts = () => {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.5997787951895!2d-0.13418368442366542!3d51.50947777963666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM1DCsDM3JzE0LjUiTiAwwrAwMycxMi45Ilc!5e0!3m2!1sen!2suk!4v1560851651455!5m2!1sen!2suk"
           width="360"
           height="250"
-          frameborder="0"
+          frameBorder="0"
           allowfullscreen=""
           title="Google Map"
         ></iframe>
