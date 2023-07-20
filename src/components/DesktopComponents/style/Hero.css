@@ -71,7 +71,7 @@
 .slider-button.active {
   background-color: #c4da00;
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero-slider {
     height: 500px;
   }
