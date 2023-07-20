@@ -75,7 +75,7 @@ body {
 }
 @media (max-width: 600px) {
   .hero-slider {
-    height: 500px;
+    min-height: 500px;
   }
 
   .hero-title {

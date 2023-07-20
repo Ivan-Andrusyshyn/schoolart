@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaTelegram, FaFacebook, FaPhone } from "react-icons/fa";
-import "./contactDesk.css";
+import "../style/contactDesk.css";
 import { ContactsSocial } from "../../UI/ContactsSocial";
 export const ContactsDesk = () => {
   return (

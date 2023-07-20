@@ -1,4 +1,4 @@
-import "./services.css";
+import "../style/services.css";
 export const Services = () => {
   return (
     <div className="services-section" id="services">
