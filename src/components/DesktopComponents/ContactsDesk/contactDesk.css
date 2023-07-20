@@ -1,5 +1,5 @@
 .contacts-section {
-  padding: 40px 20px;
+  padding: 40px 0;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -11,7 +11,9 @@
   font-weight: bold;
   margin-bottom: 20px;
 }
-
+.contact-wrapper {
+  padding: 0 20px;
+}
 .contact-item {
   display: flex;
   align-items: center;
@@ -28,7 +30,10 @@
   text-decoration: none;
   font-size: 16px;
 }
-
+.map-frame {
+  width: 400px;
+  height: 400px;
+}
 .contact-map {
   margin-top: 20px;
   height: 450px;
@@ -37,23 +42,22 @@
 
 @media (max-width: 768px) {
   .contacts-section {
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .section-title {
     font-size: 24px;
   }
-
+  .map-frame {
+    width: 400px;
+    height: 400px;
+  }
   .contact-icon {
     font-size: 20px;
   }
 
   .contact-item a {
     font-size: 14px;
-  }
-
-  .contact-map {
-    height: 300px;
   }
 }
 .link-contact-desk {

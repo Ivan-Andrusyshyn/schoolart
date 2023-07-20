@@ -6,7 +6,7 @@ import "./style/Hero.css";
 import { CallNow } from "../UI/CollNow/CallNow";
 export const DesktopComponents = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ margin: "0 auto" }}>
       <Hero />
       <Services />
       <AboutStudio />

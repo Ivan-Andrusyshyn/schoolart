@@ -1,8 +1,9 @@
 .contact-page {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 20px;
+  height: 600px;
 }
 
 .contact-item {

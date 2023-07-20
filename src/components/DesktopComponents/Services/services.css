@@ -16,13 +16,16 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  border: 1px solid #fff;
 }
-
+.service-container {
+  padding: 0 20px;
+}
 .price-list li {
-  margin-bottom: 20px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
+  padding: 15px;
   display: flex;
+  gap: 10px;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
@@ -49,7 +52,6 @@
   .services-section {
     padding: 20px 0;
   }
-
   .section-title {
     font-size: 22px;
     margin-bottom: 15px;
@@ -67,11 +69,13 @@
     padding: 10px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 540px) {
   .services-section {
     padding: 20px 0;
   }
-
+  .service-container {
+    padding: 0 10px;
+  }
   .section-title {
     font-size: 22px;
     margin-bottom: 15px;
@@ -83,10 +87,14 @@
 
   .price {
     font-size: 14px;
-    width: 80px;
+    width: 100px;
   }
 
   .price-list {
     padding: 10px;
+  }
+  .price-list li {
+    margin-bottom: 0;
+    align-items: center;
   }
 }
