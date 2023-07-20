@@ -1,6 +1,6 @@
 import "./App.css";
 import { Home } from "./components/Pages/Home/Home";
-import { Services } from "./components/Pages/Services/Services";
+import { ServicesMob } from "./components/Pages/Services/Services";
 import { Contacts } from "./components/Pages/Contacts/Contacts";
 import { About } from "./components/Pages/About/About";
 import { Main } from "./components/Main";
@@ -24,7 +24,7 @@ const App = () => {
         {isMobile ? (
           <>
             <Route index element={<Home />} />
-            <Route path="services" element={<Services />} />
+            <Route path="services" element={<ServicesMob />} />
             <Route path="contacts" element={<Contacts />} />
             <Route path="about" element={<About />} />
           </>

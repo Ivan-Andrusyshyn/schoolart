@@ -1,3 +1,4 @@
-export const Services = () => {
-  return <h2>Послуги та ціни</h2>;
+import { Services } from "../../DesktopComponents/Services/Services";
+export const ServicesMob = () => {
+  return <Services />;
 };

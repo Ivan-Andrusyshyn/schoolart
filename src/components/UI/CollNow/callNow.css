@@ -11,7 +11,7 @@
   transition: transform 0.2s ease;
   position: fixed;
   bottom: 50px;
-  right: 150px;
+  right: 100px;
   animation: pulse 3s infinite;
   color: #fff;
   text-decoration: none;
@@ -21,9 +21,10 @@
 
 @media (max-width: 767px) {
   .call-button {
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -31,7 +32,19 @@
   color: #fff;
   font-size: 24px;
 }
+@media (max-width: 480px) {
+  .call-button {
+    bottom: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
 
+.call-icon {
+  color: #fff;
+  font-size: 24px;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);

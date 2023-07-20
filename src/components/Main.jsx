@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "./Header/Header";
-import { CallNow } from "./DesktopComponents/CollNow/CallNow";
+import { CallNow } from "./UI/CollNow/CallNow";
 export const Main = () => {
   return (
     <>
