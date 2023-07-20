@@ -114,7 +114,7 @@ export const Contacts = () => {
           width="360"
           height="250"
           frameBorder="0"
-          allowfullscreen=""
+          allowFullScreen=""
           title="Google Map"
         ></iframe>
       </div>
