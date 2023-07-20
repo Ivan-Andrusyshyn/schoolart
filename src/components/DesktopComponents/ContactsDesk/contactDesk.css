@@ -1,0 +1,89 @@
+.contacts-section {
+  padding: 100px 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.contact-map {
+  margin-top: 20px;
+  height: 450px;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .contacts-section {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+  }
+
+  .contact-item a {
+    font-size: 14px;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}
+.link-contact-desk {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.link-contact-desk::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+.link-contact-desk:hover::before {
+  animation: drawLine 0.3s forwards;
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    background-color: rgb(175, 190, 38);
+  }
+}

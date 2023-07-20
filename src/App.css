@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-image: linear-gradient(to left, #964b00, #008600);
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .App-logo {

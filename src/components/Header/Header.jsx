@@ -41,13 +41,17 @@ export const Header = () => {
 
             <ul className="list-nav">
               <li className="nav_list_item">
-                <p className="list_item_title">Про студію</p>
+                <a href="#about" className="list_item_title">
+                  Про студію
+                </a>
               </li>
               <li className="nav_list_item">
                 <p className="list_item_title"> Послуги та ціни</p>
               </li>
               <li className="nav_list_item">
-                <p className="list_item_title">Контакти</p>
+                <a href="#contacts" className="list_item_title">
+                  Контакти
+                </a>
               </li>
             </ul>
           </div>

@@ -22,12 +22,12 @@
   align-items: center;
   color: #fff;
 }
-a {
+.link-contact {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
 }
 
-a:hover {
+.link-contact:hover {
   color: rgb(175, 190, 38);
 }

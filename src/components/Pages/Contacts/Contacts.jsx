@@ -31,6 +31,7 @@ export const Contacts = () => {
           href="https://www.instagram.com/your_instagram_account/"
           target="_blank"
           rel="noopener noreferrer"
+          className="link-contact"
         >
           Instagram
         </a>
