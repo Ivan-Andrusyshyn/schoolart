@@ -15,13 +15,20 @@ export const ContactsDesk = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            background:
+              "linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)",
+            borderRadius: "25%",
             position: "relative",
           }}
         >
           <FaInstagram
             className="contact-icon"
             size={35}
-            style={{ color: "#d13b00", left: -1, position: "absolute" }}
+            style={{
+              color: "#8b34029d",
+              left: -2,
+              position: "absolute",
+            }}
           />
         </div>
         <a

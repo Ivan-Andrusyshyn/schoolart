@@ -7,7 +7,7 @@ export const AboutStudio = () => {
         style={{
           color: "#fff",
           fontSize: 16,
-          padding: 20,
+          padding: "0 20px",
         }}
       >
         nostrum nam ad officiis, maiores voluptates modi obcaecati tempora

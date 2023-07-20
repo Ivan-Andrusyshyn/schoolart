@@ -4,7 +4,6 @@ import React, { useEffect, useState } from "react";
 import image1 from "../../../image/gonchar1.jpg";
 import image2 from "../../../image/majster-klas-goncharnogo-mystecztva-dlya-dvoh-01.jpg";
 import image3 from "../../../image/image.webp";
-
 export const Hero = () => {
   const slides = [
     {

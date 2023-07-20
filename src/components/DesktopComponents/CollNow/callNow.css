@@ -1,0 +1,45 @@
+.call-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #008600, #249ec7);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: fixed;
+  bottom: 50px;
+  right: 150px;
+  animation: pulse 3s infinite;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .call-button {
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+  }
+}
+
+.call-icon {
+  color: #fff;
+  font-size: 24px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
