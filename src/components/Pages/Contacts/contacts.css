@@ -32,3 +32,8 @@
 .link-contact:hover {
   color: rgb(175, 190, 38);
 }
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+}

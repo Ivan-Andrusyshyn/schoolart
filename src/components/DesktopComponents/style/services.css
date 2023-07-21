@@ -16,10 +16,14 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  border-radius: 10px;
   border: 1px solid #fff;
 }
 .service-container {
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 .price-list li {
   border-bottom: 1px solid #ccc;
@@ -46,11 +50,20 @@
   font-size: 16px;
   color: #fff;
   margin-top: 5px;
+  width: 110px;
+  text-align: center;
 }
-
+.price-tittle {
+  text-align: center;
+}
 @media only screen and (max-width: 768px) {
   .services-section {
     padding: 20px 0;
+  }
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
   .section-title {
     font-size: 22px;
@@ -62,12 +75,25 @@
   }
 
   .price {
-    font-size: 14px;
+    width: 100px;
   }
 
   .price-list {
     padding: 10px;
   }
+}
+.price-list h3 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price-list:first-child {
+  background-image: linear-gradient(to left, #964b00, #008600);
+}
+
+.price-list:nth-child(even) {
+  background-image: linear-gradient(to right, #964b00, #008600);
 }
 @media only screen and (max-width: 540px) {
   .services-section {

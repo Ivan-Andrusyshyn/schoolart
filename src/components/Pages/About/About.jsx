@@ -1,3 +1,4 @@
+import { AboutStudio } from "../../DesktopComponents/AboutStudio/AboutStudio";
 export const About = () => {
-  return <h2>Про студію </h2>;
+  return <AboutStudio />;
 };

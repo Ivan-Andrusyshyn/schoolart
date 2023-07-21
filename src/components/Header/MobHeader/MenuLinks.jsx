@@ -51,24 +51,7 @@ export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
           </p>
         </Link>
       </MenuItem>
-      <MenuItem className="menu-item" onClick={handleMenuClose}>
-        <Link
-          to="services"
-          className={`menu-link `}
-          style={{
-            display: "flex",
-            textDecoration: "none",
-          }}
-        >
-          <FcMms size={24} className="icon-mob-menu" />
-          <p
-            className="mob-menu-text"
-            style={{ color: activeLink === "/services" ? "#c4da00" : "#fff" }}
-          >
-            Послуги та ціни
-          </p>
-        </Link>
-      </MenuItem>
+
       <MenuItem className="menu-item" onClick={handleMenuClose}>
         <Link
           to="contacts"

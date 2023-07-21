@@ -10,6 +10,7 @@ import "./contacts.css";
 export const Contacts = () => {
   return (
     <div className="contact-page">
+      <h2 className="section-title">Контакти</h2>
       <div className="contact-item">
         <div
           style={{

@@ -37,31 +37,33 @@ export const Hero = () => {
   };
 
   return (
-    <div className="hero-slider">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`slide ${index === currentSlide ? "active-slide" : ""}`}
-          style={{ backgroundImage: `url(${slide.image})` }}
-        >
-          <div className="overlay"></div>
-          <div className="slide-content">
-            <h1 className="hero-title">{slide.title}</h1>
-            <p className="hero-subtitle">{slide.subtitle}</p>
-          </div>
-        </div>
-      ))}
-
-      <div className="slider-buttons">
+    <div className="hero-section">
+      <div className="hero-slider">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`slider-button ${
-              index === currentSlide ? "active" : ""
-            }`}
-            onClick={() => handleSlideChange(index)}
-          ></div>
+            className={`slide ${index === currentSlide ? "active-slide" : ""}`}
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            <div className="overlay"></div>
+            <div className="slide-content">
+              <h1 className="hero-title">{slide.title}</h1>
+              <p className="hero-subtitle">{slide.subtitle}</p>
+            </div>
+          </div>
         ))}
+
+        <div className="slider-buttons">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`slider-button ${
+                index === currentSlide ? "active" : ""
+              }`}
+              onClick={() => handleSlideChange(index)}
+            ></div>
+          ))}
+        </div>
       </div>
     </div>
   );

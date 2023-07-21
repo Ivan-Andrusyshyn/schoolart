@@ -8,5 +8,66 @@
   color: #fff;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.team-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.team-member {
+  width: 500px;
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+}
+.member-image {
+  height: 200px;
+  width: 210px;
+}
+.member-image img {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+.team-position {
+  color: #ffffff91;
+  margin-bottom: 10px;
+}
+.member-info {
+  padding: 10px;
+  max-width: 300px;
+  margin-left: 20px;
+}
+.member-info h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  .team-member {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .team-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .about-title {
+    font-size: 22px;
+  }
 }
