@@ -26,7 +26,7 @@ export const ContactsDesk = () => {
               className="contact-icon"
               size={35}
               style={{
-                color: "#8b34029d",
+                color: "#ffffff75",
                 left: -2,
                 position: "absolute",
               }}

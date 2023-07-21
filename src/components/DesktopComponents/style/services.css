@@ -89,7 +89,7 @@
 }
 
 .price-list:first-child {
-  background-image: linear-gradient(to left, #cc8960, #70a871);
+  background-image: linear-gradient(to left, #cc8960, #5da85e);
 }
 
 .price-list:nth-child(even) {
