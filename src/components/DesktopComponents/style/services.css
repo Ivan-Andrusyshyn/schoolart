@@ -89,11 +89,11 @@
 }
 
 .price-list:first-child {
-  background-image: linear-gradient(to left, #964b00, #008600);
+  background-image: linear-gradient(to left, #cc8960, #70a871);
 }
 
 .price-list:nth-child(even) {
-  background-image: linear-gradient(to right, #964b00, #008600);
+  background-image: linear-gradient(to left, #cc8960, #70a871);
 }
 @media only screen and (max-width: 540px) {
   .services-section {

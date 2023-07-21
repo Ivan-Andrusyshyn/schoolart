@@ -1,6 +1,6 @@
 .header-section {
   padding: 0 94px;
-  background-image: linear-gradient(to left, #964b00, #008600);
+  background-image: linear-gradient(to left, #cc8960, #70a871);
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -71,7 +71,7 @@ p {
 }
 @media (max-width: 768px) {
   .header-section {
-    padding: 8px 20px;
+    padding: 3px 20px;
   }
 
   .list-nav {

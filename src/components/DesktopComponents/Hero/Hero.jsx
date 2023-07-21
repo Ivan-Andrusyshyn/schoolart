@@ -3,10 +3,8 @@ import "../style/slider.css";
 import React, { useEffect, useState } from "react";
 import { slides } from "./slides";
 import { useSwipeable } from "react-swipeable";
-
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -21,12 +19,19 @@ export const Hero = () => {
   const handlers = useSwipeable({
     onSwipedLeft: () =>
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length),
-    onSwipedRight: () =>
+    onSwipedRight: () => {
       setCurrentSlide(
         (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-      ),
+      );
+    },
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true, // Add this to enable swiping with mouse (for testing in the browser)
+    swipeDuration: 300,
+    trackTouch: true,
+    trackMouse: false,
+    delta: 10,
+    preventScrollOnSwipe: true,
+    rotationAngle: 0,
+    touchEventOptions: { passive: true },
   });
 
   return (
@@ -36,7 +41,9 @@ export const Hero = () => {
           <div
             key={index}
             className={`slide ${index === currentSlide ? "active-slide" : ""}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
+            style={{
+              backgroundImage: `url(${slide.image})`,
+            }}
           >
             <div className="overlay"></div>
             <div className="slide-content">

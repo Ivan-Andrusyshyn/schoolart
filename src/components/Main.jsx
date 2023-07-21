@@ -5,7 +5,7 @@ export const Main = () => {
   return (
     <div
       style={{
-        backgroundImage: "linear-gradient(to left, #964b00, #008600)",
+        backgroundImage: "linear-gradient(to left, #cc8960, #70a871)",
       }}
     >
       <Header />
