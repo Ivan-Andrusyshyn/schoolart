@@ -26,6 +26,7 @@ export const Services = () => {
                   <p
                     style={{
                       color: isOpen["masterClassPottery" + index] && "#fff",
+                      textDecoration: "underline",
                     }}
                   >
                     {el.name}
@@ -59,6 +60,7 @@ export const Services = () => {
                   <p
                     style={{
                       color: isOpen["masterClassPainting" + index] && "#fff",
+                      textDecoration: "underline",
                     }}
                   >
                     {el.name}
@@ -91,6 +93,7 @@ export const Services = () => {
                   <p
                     style={{
                       color: isOpen["aboniment" + index] && "#fff",
+                      textDecoration: "underline",
                     }}
                   >
                     {el.name}
@@ -122,6 +125,7 @@ export const Services = () => {
                   <p
                     style={{
                       color: isOpen["onlineServices" + index] && "#fff",
+                      textDecoration: "underline",
                     }}
                   >
                     {el.name}
