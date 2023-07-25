@@ -41,7 +41,7 @@ export const Services = () => {
                 {isOpen["masterClassPottery" + index] && (
                   <div className="description_wrap">
                     <p className="description-subtitle">{el.description}</p>
-                    <p style={{ color: "#BDBDBD" }}>{el.age}</p>
+                    <p style={{ color: "#BDBDBD" }}>Вікова група: {el.age}</p>
                   </div>
                 )}
               </li>
@@ -75,7 +75,7 @@ export const Services = () => {
                 {isOpen["masterClassPainting" + index] && (
                   <div className="description_wrap">
                     <p className="description-subtitle">{el.description}</p>
-                    <p style={{ color: "#BDBDBD" }}>{el.age}</p>
+                    <p style={{ color: "#BDBDBD" }}>Вікова група: {el.age}</p>
                   </div>
                 )}
               </li>
