@@ -6,7 +6,7 @@ export const slides = [
   {
     image: image1,
     title: "Верес навКОЛО",
-    subtitle: "Студія творчості",
+    subtitle: "Студія живопису",
   },
   {
     image: image3,
