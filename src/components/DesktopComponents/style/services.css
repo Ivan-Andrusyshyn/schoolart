@@ -13,6 +13,7 @@
 }
 
 .price-list {
+  background-image: linear-gradient(to left, #cc8960, #5da85e);
   padding: 0;
   margin: 0;
   list-style: none;
@@ -22,39 +23,63 @@
 .service-container {
   padding: 0 20px;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.price-list {
+  width: 46%;
 }
 .price-list li {
   border-bottom: 1px solid #ccc;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   gap: 10px;
-  flex-direction: row-reverse;
+  cursor: pointer;
+  flex-direction: column;
+  transition: max-height, color, 0.3s linear;
+}
+.services-main-wrap {
+  display: flex;
+  gap: 10px;
   justify-content: space-between;
 }
-
 .price-list p {
+  transition: max-height, color, 0.3s linear;
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 1.6;
 }
-
 .price-list li:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
 
 .price {
+  transition: color, 0.3s linear;
   font-size: 16px;
   color: #fff;
   margin-top: 5px;
   width: 110px;
   text-align: center;
 }
-.price-tittle {
+.subtitle-services {
   text-align: center;
+}
+.description_wrap {
+  padding: 10px;
+  color: #ccc;
+}
+.description_wrap p {
+  font-size: 12px;
+}
+.price-list li.open {
+  background-color: #fff;
+}
+
+.price-list li.closed {
+  background-color: #000;
 }
 @media only screen and (max-width: 768px) {
   .services-section {
@@ -62,7 +87,7 @@
   }
   .service-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 30px;
   }
   .section-title {
@@ -77,9 +102,9 @@
   .price {
     width: 100px;
   }
-
   .price-list {
     padding: 10px;
+    width: 100%;
   }
 }
 .price-list h3 {
@@ -88,13 +113,6 @@
   margin-bottom: 10px;
 }
 
-.price-list:first-child {
-  background-image: linear-gradient(to left, #cc8960, #5da85e);
-}
-
-.price-list:nth-child(even) {
-  background-image: linear-gradient(to left, #cc8960, #70a871);
-}
 @media only screen and (max-width: 540px) {
   .services-section {
     padding: 20px 0;
@@ -106,7 +124,9 @@
     font-size: 22px;
     margin-bottom: 15px;
   }
-
+  .price-list {
+    width: 100%;
+  }
   .price-list > p {
     font-size: 14px;
   }
@@ -121,6 +141,6 @@
   }
   .price-list li {
     margin-bottom: 0;
-    align-items: center;
+    justify-content: space-between;
   }
 }

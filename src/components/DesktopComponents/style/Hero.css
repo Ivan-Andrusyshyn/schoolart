@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   margin: 0 auto;
+  transition: transform 1s ease;
 }
 body {
   background-image: linear-gradient(to left, #cc8960, #70a871);

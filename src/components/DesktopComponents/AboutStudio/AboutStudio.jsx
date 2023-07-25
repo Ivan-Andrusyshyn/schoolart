@@ -36,7 +36,7 @@ const Teams = ({ name, position, description, image }) => {
 
 export const AboutStudio = () => {
   return (
-    <div className="about-section">
+    <div className="about-section" id="about">
       <h2 className="about-title ">Про нас</h2>
       <div className="team-container">
         <p>
@@ -46,12 +46,10 @@ export const AboutStudio = () => {
           repudiandae. Corporis quo, dolorum totam iure quis sit accusantium est
           architecto autem recusandae quia cupiditate consectetur laudantium
           asperiores modi voluptates nostrum minima quidem aliquid? Repellendus
-          corporis vero velit inventore sed dolor asperiores harum mollitia
-          quisquam iure, fugit doloremque illum consequatur expedita in cum
-          corrupti alias officiis dicta similique repellat vitae? Iure qui
-          neque, architecto quisquam incidunt, id itaque illum tempora similique
-          accusantium voluptatibus omnis fugiat in magni corrupti adipisci
-          nihil. Saepe iusto nesciunt nulla laboriosam!
+          corporis vero velit inventore sed dolor asperiores harum mollitia tur
+          expedita in cum at vitae? Iure qui illum tempora similique accusantium
+          voluptatibus omnis fugiat in magni corrupti adipisci nihil. Saepe
+          iusto nesciunt nulla laboriosam!
         </p>
       </div>
       <h3 className="team-title">Наша команда</h3>
