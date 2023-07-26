@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { contentServices } from "./contenServices";
 import "../style/services.css";
 import { nanoid } from "nanoid";
+import { ItemServices } from "./ItemServices";
 export const Services = () => {
   const [isOpen, setIsOpen] = useState({});
   const toggleDescription = (serviceType, index) => {
@@ -19,33 +20,13 @@ export const Services = () => {
 
           {contentServices.masterClassPottery.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <li
-                onClick={() => toggleDescription("masterClassPottery", index)}
-              >
-                <div className="services-main-wrap">
-                  <p
-                    style={{
-                      color: isOpen["masterClassPottery" + index] && "#fff",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    {el.name}
-                  </p>
-                  <p
-                    style={{
-                      color: isOpen["masterClassPottery" + index] && "#fff",
-                    }}
-                  >
-                    {el.price}
-                  </p>
-                </div>
-                {isOpen["masterClassPottery" + index] && (
-                  <div className="description_wrap">
-                    <p className="description-subtitle">{el.description}</p>
-                    <p style={{ color: "#BDBDBD" }}>Вікова група: {el.age}</p>
-                  </div>
-                )}
-              </li>
+              <ItemServices
+                el={el}
+                index={index}
+                isOpen={isOpen}
+                toggleDescription={toggleDescription}
+                name={"masterClassPottery"}
+              />
             </React.Fragment>
           ))}
         </ul>
@@ -53,34 +34,13 @@ export const Services = () => {
           <h3 className="subtitle-services">Майстер-клас з живопису</h3>
           {contentServices.masterClassPainting.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <li
-                onClick={() => toggleDescription("masterClassPainting", index)}
-              >
-                <div className="services-main-wrap">
-                  <p
-                    style={{
-                      color: isOpen["masterClassPainting" + index] && "#fff",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    {el.name}
-                  </p>
-                  <p
-                    style={{
-                      color: isOpen["masterClassPainting" + index] && "#fff",
-                    }}
-                  >
-                    {el.price}
-                  </p>
-                </div>
-
-                {isOpen["masterClassPainting" + index] && (
-                  <div className="description_wrap">
-                    <p className="description-subtitle">{el.description}</p>
-                    <p style={{ color: "#BDBDBD" }}>Вікова група: {el.age}</p>
-                  </div>
-                )}
-              </li>
+              <ItemServices
+                el={el}
+                index={index}
+                isOpen={isOpen}
+                toggleDescription={toggleDescription}
+                name={"masterClassPainting"}
+              />
             </React.Fragment>
           ))}
         </ul>
@@ -88,31 +48,13 @@ export const Services = () => {
           <h3 className="subtitle-services">Заняття для дітей в студії</h3>
           {contentServices.abonimentServices.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <li onClick={() => toggleDescription("aboniment", index)}>
-                <div className="services-main-wrap">
-                  <p
-                    style={{
-                      color: isOpen["aboniment" + index] && "#fff",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    {el.name}
-                  </p>
-                  <p
-                    style={{
-                      color: isOpen["aboniment" + index] && "#fff",
-                    }}
-                  >
-                    {el.price}
-                  </p>
-                </div>
-                {isOpen["aboniment" + index] && (
-                  <div className="description_wrap">
-                    <p className="description-subtitle">{el.description}</p>
-                    <p>{el.age}</p>
-                  </div>
-                )}
-              </li>
+              <ItemServices
+                el={el}
+                index={index}
+                isOpen={isOpen}
+                toggleDescription={toggleDescription}
+                name={"aboniment"}
+              />
             </React.Fragment>
           ))}
         </ul>
@@ -120,30 +62,13 @@ export const Services = () => {
           <h3 className="subtitle-services">Онлайн заняття</h3>
           {contentServices.onlineServices.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <li onClick={() => toggleDescription("onlineServices", index)}>
-                <div className="services-main-wrap">
-                  <p
-                    style={{
-                      color: isOpen["onlineServices" + index] && "#fff",
-                      textDecoration: "underline",
-                    }}
-                  >
-                    {el.name}
-                  </p>
-                  <p
-                    style={{
-                      color: isOpen["onlineServices" + index] && "#fff",
-                    }}
-                  >
-                    {el.price}
-                  </p>
-                </div>
-                {isOpen["onlineServices" + index] && (
-                  <div className="description_wrap">
-                    <p className="description-subtitle">{el.description}</p>
-                  </div>
-                )}
-              </li>
+              <ItemServices
+                el={el}
+                index={index}
+                isOpen={isOpen}
+                toggleDescription={toggleDescription}
+                name={"onlineServices"}
+              />
             </React.Fragment>
           ))}
         </ul>
