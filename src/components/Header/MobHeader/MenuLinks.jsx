@@ -51,7 +51,6 @@ export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
           </p>
         </Link>
       </MenuItem>
-
       <MenuItem className="menu-item" onClick={handleMenuClose}>
         <Link
           to="contacts"

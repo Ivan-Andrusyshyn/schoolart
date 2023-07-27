@@ -6,16 +6,16 @@
 }
 .about-title {
   color: #fff;
+  margin-top: 0;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 40px;
 }
-.team-title {
-  color: #fff;
-  font-size: 22px;
+.team-subtitle {
+  font-size: 18px;
+  margin-bottom: 0;
+  color: rgba(240, 248, 255, 0.541);
   font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 40px;
   text-align: center;
 }
 .team-container {
@@ -68,6 +68,7 @@
     margin-bottom: 20px;
   }
   .about-title {
+    margin-bottom: 20px;
     font-size: 22px;
   }
 }

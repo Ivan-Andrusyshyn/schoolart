@@ -19,51 +19,49 @@ const teamMembers = [
   },
 ];
 
-const Teams = ({ name, position, description, image }) => {
-  return (
-    <div className="team-member">
-      <div className="member-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="member-info">
-        <h3>{name}</h3>
-        <p className="team-position">{position}</p>
-        <p>{description}</p>
-      </div>
-    </div>
-  );
-};
-
 export const AboutStudio = () => {
   return (
     <div className="about-section" id="about">
-      <h2 className="about-title ">Про нас</h2>
+      <h2 className="about-title">Про нас</h2>
       <div className="team-container">
+        <h3 className="team-subtitle">Живопис</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-          veritatis, commodi ab debitis, facilis ratione maiores rerum
-          quibusdam, aspernatur necessitatibus in ipsam odio repellendus sequi
-          repudiandae. Corporis quo, dolorum totam iure quis sit accusantium est
-          architecto autem recusandae quia cupiditate consectetur laudantium
-          asperiores modi voluptates nostrum minima quidem aliquid? Repellendus
-          corporis vero velit inventore sed dolor asperiores harum mollitia tur
-          expedita in cum at vitae? Iure qui illum tempora similique accusantium
-          voluptatibus omnis fugiat in magni corrupti adipisci nihil. Saepe
-          iusto nesciunt nulla laboriosam!
+          Займатись мистецтвом - це унікальний спосіб самовираження та відкриття
+          свого творчого потенціалу. Писати на холсті акриловими фарбами та
+          гуашшю - дозволяє зануритись у світ кольорів і форм, звільняючи
+          внутрішній світ і знаходячи натхнення у навколишньому. Кожна кисточка
+          стає вашим магічним інструментом, який допомагає передати ваші думки
+          та почуття на полотні, створюючи творіння мистецтва, яке залишає вас
+          задоволеними та захопленими.
         </p>
-      </div>
-      <h3 className="team-title">Наша команда</h3>
-
-      <div className="team-container">
-        {teamMembers.map((member, index) => (
-          <Teams
-            key={index}
-            name={member.name}
-            position={member.position}
-            image={member.image}
-            description={member.description}
-          />
-        ))}
+        <h3 className="team-subtitle">Гончарство</h3>
+        <p>
+          Гончарство - це захоплююче ремесло, яке дозволяє працювати з глиною та
+          створювати унікальні вироби. Кожен виріб отримується унікальним
+          завдяки рукам талановитих майстрів, які знають секрети обробки глини
+          та виготовлення чудових форм. Займаючись гончарством, ви зможете
+          втілити свою творчість у реальність і створити неповторні вироби, які
+          прикрасять ваш дім або стануть чудовими подарунками для рідних та
+          друзів.
+        </p>
+        <h3 className="team-subtitle">Наша команда</h3>
+        <p>
+          Наша команда - це злагоджена група професіоналів, яка пристрасно
+          ставиться до мистецтва та гончарства. Ми з радістю поділимося своїм
+          досвідом та знаннями з вами, навчимо вас основам мистецтва та
+          допоможемо розвинути ваші таланти. Приєднуйтесь до нас і відкрийте для
+          себе захоплюючий світ творчості!
+        </p>
+        <h3 className="team-subtitle">Чому обрати саме нашу студію ?</h3>
+        <p>
+          Вибір нашої студії - це вибір професіоналів, які дбають про ваші
+          творчі досягнення. Ми пропонуємо індивідуальний підхід до кожного
+          учня, допомагаємо розвивати ваш талант та підкреслити ваш унікальний
+          стиль. Наші вчителі - це досвідчені майстри, які поділяться з вами
+          своїми знаннями і вміннями. Ми створимо теплу та творчу атмосферу, де
+          ви зможете зануритися у світ мистецтва та гончарства. Приходьте до нас
+          та відкрийте для себе чудовий світ творчості та мистецтва!
+        </p>
       </div>
     </div>
   );

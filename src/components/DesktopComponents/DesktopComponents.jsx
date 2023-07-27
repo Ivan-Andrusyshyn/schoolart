@@ -9,7 +9,7 @@ export const DesktopComponents = () => {
     <div style={{ margin: "0 auto" }}>
       <Hero />
       <Services />
-      {/* <AboutStudio /> */}
+      <AboutStudio />
       <ContactsDesk />
       <CallNow />
     </div>

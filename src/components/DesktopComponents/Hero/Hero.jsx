@@ -3,6 +3,7 @@ import "../style/slider.css";
 import React, { useEffect, useState } from "react";
 import { slides } from "./slides";
 import { useSwipeable } from "react-swipeable";
+
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
@@ -17,12 +18,19 @@ export const Hero = () => {
   };
 
   const handlers = useSwipeable({
-    onSwipedLeft: () =>
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length),
+    onSwipedLeft: () => {
+      if (currentSlide === slides.length - 1) {
+        setCurrentSlide(0);
+      } else {
+        setCurrentSlide((prevSlide) => prevSlide + 1);
+      }
+    },
     onSwipedRight: () => {
-      setCurrentSlide(
-        (prevSlide) => (prevSlide - 1 + slides.length) % slides.length
-      );
+      if (currentSlide === 0) {
+        setCurrentSlide(slides.length - 1);
+      } else {
+        setCurrentSlide((prevSlide) => prevSlide - 1);
+      }
     },
     preventDefaultTouchmoveEvent: true,
     swipeDuration: 300,
@@ -37,21 +45,31 @@ export const Hero = () => {
   return (
     <div className="hero-section">
       <div className="hero-slider" {...handlers}>
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`slide ${index === currentSlide ? "active-slide" : ""}`}
-            style={{
-              backgroundImage: `url(${slide.image})`,
-            }}
-          >
-            <div className="overlay"></div>
-            <div className="slide-content">
-              <h1 className="hero-title">{slide.title}</h1>
-              <p className="hero-subtitle">{slide.subtitle}</p>
+        <div
+          className="slider"
+          style={{
+            transform: `translateX(-${currentSlide * 100}%)`,
+            transition: "transform 0.5s ease",
+          }}
+        >
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`slide ${
+                index === currentSlide ? "active-slide" : ""
+              }`}
+              style={{
+                backgroundImage: `url(${slide.image})`,
+              }}
+            >
+              <div className="overlay"></div>
+              <div className="slide-content">
+                <h1 className="hero-title">{slide.title}</h1>
+                <p className="hero-subtitle">{slide.subtitle}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
         <div className="slider-buttons">
           {slides.map((slide, index) => (
             <div

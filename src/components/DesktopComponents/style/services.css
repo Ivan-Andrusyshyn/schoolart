@@ -36,10 +36,11 @@
   padding: 10px;
   display: flex;
   gap: 10px;
-  overflow: hidden;
-  max-height: auto;
-  cursor: pointer;
   flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  max-height: 35px;
+  cursor: pointer;
 }
 
 .services-main-wrap {
