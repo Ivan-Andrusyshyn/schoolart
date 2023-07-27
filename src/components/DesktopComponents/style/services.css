@@ -39,7 +39,7 @@
   flex-direction: column;
   overflow: hidden;
   justify-content: center;
-  max-height: 35px;
+  max-height: auto;
   cursor: pointer;
 }
 
