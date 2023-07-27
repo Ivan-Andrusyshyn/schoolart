@@ -1,24 +1,6 @@
 import React from "react";
 import "./aboutDesktop.css";
-import image1 from "../../../image/gonchar1.jpg";
-import image2 from "../../../image/majster-klas-goncharnogo-mystecztva-dlya-dvoh-01.jpg";
-const teamMembers = [
-  {
-    name: "Іван Іванович Іванов",
-    position: "Генеральний директор",
-    description:
-      "Іван Іванович Іванов має багаторічний досвід у сфері управління і розвитку бізнесу. Він відповідає за стратегічне планування та прийняття стратегічних рішень компанії.",
-    image: image1,
-  },
-  {
-    name: "Марія Петрівна Сидоренко",
-    position: "Маркетинговий директор",
-    description:
-      "Марія Петрівна Сидоренко - експерт в області маркетингу та реклами. Вона керує всіма маркетинговими ініціативами та забезпечує ефективні маркетингові кампанії компанії.",
-    image: image2,
-  },
-];
-
+import { teamMembers } from "./teamsObj";
 export const AboutStudio = () => {
   return (
     <div className="about-section" id="about">
