@@ -1,6 +1,5 @@
 import React from "react";
 import "./aboutDesktop.css";
-import { teamMembers } from "./teamsObj";
 export const AboutStudio = () => {
   return (
     <div className="about-section" id="about">

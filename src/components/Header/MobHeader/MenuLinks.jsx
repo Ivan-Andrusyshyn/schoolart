@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { blue } from "@mui/material/colors";
 import "./mobHeader.css";
 import "../header.css";
 import MenuItem from "@mui/material/MenuItem";
@@ -8,7 +7,7 @@ import Menu from "@mui/material/Menu";
 import HomeIcon from "@mui/icons-material/Home";
 import "./mobHeader.css";
 import "../header.css";
-import { FcContacts, FcMms, FcPanorama, FcPhone } from "react-icons/fc";
+import { FcContacts, FcPanorama, FcPhone } from "react-icons/fc";
 export const MenuLinks = ({ colorActual, setAnchorEl, anchorEl }) => {
   const handleMenuClose = () => {
     setAnchorEl(null);

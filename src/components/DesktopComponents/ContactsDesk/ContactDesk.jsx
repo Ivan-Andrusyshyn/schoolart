@@ -12,7 +12,6 @@ export const ContactsDesk = () => {
             style={{
               width: 28,
               height: 28,
-              borderRadius: "50%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
