@@ -3,7 +3,7 @@ import "../style/slider.css";
 import React, { useEffect, useState } from "react";
 import { slides } from "./slides";
 import { useSwipeable } from "react-swipeable";
-
+import { nanoid } from "nanoid";
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
@@ -11,7 +11,7 @@ export const Hero = () => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, [slides.length]);
+  }, []);
 
   const handleSlideChange = (index) => {
     setCurrentSlide(index);
@@ -54,7 +54,7 @@ export const Hero = () => {
         >
           {slides.map((slide, index) => (
             <div
-              key={index}
+              key={nanoid()}
               className={`slide ${
                 index === currentSlide ? "active-slide" : ""
               }`}
@@ -73,7 +73,7 @@ export const Hero = () => {
         <div className="slider-buttons">
           {slides.map((slide, index) => (
             <div
-              key={index}
+              key={nanoid()}
               className={`slider-button ${
                 index === currentSlide ? "active" : ""
               }`}

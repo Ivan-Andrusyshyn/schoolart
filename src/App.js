@@ -5,12 +5,7 @@ import { About } from "./components/Pages/About/About";
 import { Main } from "./components/Main";
 import { DesktopComponents } from "./components/DesktopComponents/DesktopComponents";
 import React from "react";
-import {
-  Routes,
-  Route,
-  BrowserRouter as Router,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const App = () => {
