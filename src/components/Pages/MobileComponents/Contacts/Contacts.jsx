@@ -2,13 +2,13 @@ import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./contacts.css";
 import { MapLocal } from "../../../UI/SocialContacts/MapLocal";
-import { SocailLinksMob } from "../../../UI/SocialContacts/SocialLinksMob";
+import { SocialLinksMob } from "../../../UI/SocialContacts/SocialLinksMob";
 
 export const Contacts = () => {
   return (
     <div className="contact-page">
       <h2 className="section-title">Контакти</h2>
-      <SocailLinksMob />
+      <SocialLinksMob />
       <div className="map-iframe-container">
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
           <h3>Адреса студії</h3>

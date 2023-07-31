@@ -1,6 +1,5 @@
-import { ContactsSocial } from "./ContactsSocial";
-import { FaInstagram, FaTelegram, FaFacebook, FaPhone } from "react-icons/fa";
-export const SocailLinksMob = () => (
+import { FaInstagram, FaTelegram, FaFacebook } from "react-icons/fa";
+export const SocialLinksMob = () => (
   <>
     <div className="contact-item">
       <div
