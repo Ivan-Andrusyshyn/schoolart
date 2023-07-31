@@ -1,7 +1,7 @@
 import React from "react";
 import { ContactsSocial } from "./ContactsSocial";
 import { FaInstagram, FaTelegram, FaFacebook, FaPhone } from "react-icons/fa";
-export const SocailLinks = () => {
+export const SocialLinks = () => {
   return (
     <>
       <div className="contact-item">
