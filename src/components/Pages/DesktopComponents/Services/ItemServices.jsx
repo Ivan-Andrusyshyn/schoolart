@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Collapse } from "@mui/material";
 import "../style/services.css";
 
 export const ItemServices = ({
@@ -37,12 +36,12 @@ export const ItemServices = ({
           {el.price}
         </p>
       </div>
-      <Collapse in={isDescriptionOpen} timeout="auto">
-        <div className={`description_wrap`}>
+      {isDescriptionOpen && (
+        <div className="description-wrap">
           <p className="description-subtitle">{el.description}</p>
           {el.age && <p className="description-age">Вікова група: {el.age}</p>}
         </div>
-      </Collapse>
+      )}
     </li>
   );
 };
