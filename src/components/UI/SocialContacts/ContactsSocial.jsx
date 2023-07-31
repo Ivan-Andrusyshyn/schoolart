@@ -1,4 +1,4 @@
-import "./contactsSocial.css";
+import "./style/contactsSocial.css";
 export const ContactsSocial = ({ children }) => {
   return (
     <div

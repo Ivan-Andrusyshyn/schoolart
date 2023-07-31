@@ -1,0 +1,25 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.colored-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.link-contact {
+  margin-left: 40px;
+  color: #000;
+  text-decoration: none;
+}
+
+.link-contact:hover {
+  color: #ff0000;
+}
