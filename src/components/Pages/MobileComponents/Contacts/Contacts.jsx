@@ -5,6 +5,8 @@ import { MapLocal } from "../../../UI/SocialContacts/MapLocal";
 import { SocialLinksMob } from "../../../UI/SocialContacts/SocialLinksMob";
 
 export const Contacts = () => {
+  const mapUrl =
+    "https://www.google.com.ua/maps/search/++%D0%BC.%D0%AF%D1%80%D0%B5%D0%BC%D1%87%D0%B5,+%D0%B2%D1%83%D0%BB.%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%B8,+272%D0%B0,+3+%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%85/@48.4345335,24.5458566,16.25z?entry=ttu";
   return (
     <div className="contact-page">
       <h2 className="section-title">Контакти</h2>
@@ -18,10 +20,25 @@ export const Contacts = () => {
             style={{ color: "red" }}
           />
         </div>
-        <h4 style={{ margin: 0, marginBottom: 20 }}>
-          м.Яремче, вул.Свободи, 272а, 3 поверх
-        </h4>
-        <MapLocal />
+        <address>
+          <a
+            href={mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              margin: 0,
+              color: "#fff",
+              marginBottom: 20,
+              display: "block",
+              fontStyle: "normal",
+              textDecoration: "underline",
+            }}
+          >
+            м.Яремче, вул.Свободи, 272а, 3 поверх
+          </a>
+
+          <MapLocal />
+        </address>
       </div>
     </div>
   );
