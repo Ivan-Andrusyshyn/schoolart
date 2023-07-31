@@ -43,7 +43,7 @@
 .services-main-wrap {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   justify-content: space-between;
 }
 
@@ -78,12 +78,12 @@
 }
 
 .description-subtitle {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.03em;
   line-height: 1.3;
 }
 .description-age {
-  font-size: 12px;
+  font-size: 14px;
   color: #ccccccc4;
   letter-spacing: 0.03em;
   line-height: 1.3;
