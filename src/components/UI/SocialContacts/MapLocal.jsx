@@ -1,8 +1,8 @@
 export const MapLocal = () => {
   const windowWidth = window.innerWidth;
 
-  let width = "370px";
-  let height = "300px";
+  let width = "330px";
+  let height = "280px";
 
   if (windowWidth > 768) {
     width = "470px";
