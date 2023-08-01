@@ -18,8 +18,8 @@ const App = () => {
         {isMobile ? (
           <>
             <Route index element={<Home />} />
-            <Route path="contacts" element={<Contacts />} />
-            <Route path="about" element={<About />} />
+            <Route path="contacts/" element={<Contacts />} />
+            <Route path="about/" element={<About />} />
           </>
         ) : (
           <Route path="/" element={<DesktopComponents />} />
