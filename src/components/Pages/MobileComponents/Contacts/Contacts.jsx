@@ -25,14 +25,7 @@ export const Contacts = () => {
             href={mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            style={{
-              margin: 0,
-              color: "#fff",
-              marginBottom: 20,
-              display: "block",
-              fontStyle: "normal",
-              textDecoration: "underline",
-            }}
+            className="address-title"
           >
             м.Яремче, вул.Свободи, 272а, 3 поверх
           </a>

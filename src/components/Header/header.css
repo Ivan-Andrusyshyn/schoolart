@@ -1,7 +1,6 @@
 .header-section {
   padding: 3px 94px;
   background-image: linear-gradient(to left, #cc8960, #70a871);
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 @import url("../../fonts.css");

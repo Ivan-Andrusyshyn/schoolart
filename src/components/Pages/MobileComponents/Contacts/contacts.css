@@ -32,6 +32,15 @@
 .link-contact:hover {
   color: rgb(175, 190, 38);
 }
+.address-title {
+  margin: 0;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+  font-style: normal;
+  text-align: center;
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   .section-title {
     font-size: 24px;
