@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "../style/services.css";
+import { useTransition, animated } from "react-spring";
+import "./animation.css";
 
 export const ItemServices = ({
   index,
@@ -11,15 +13,27 @@ export const ItemServices = ({
   const [isDescriptionOpen, setDescriptionOpen] = useState(
     isOpen[name + index]
   );
+  const [isLoading, setLoading] = useState(false);
 
   React.useEffect(() => {
     setDescriptionOpen(isOpen[name + index]);
   }, [isOpen, name, index]);
 
   const handleDescriptionToggle = () => {
-    setDescriptionOpen((prev) => !prev);
-    toggleDescription(name, index);
+    setLoading(true);
+    setTimeout(() => {
+      setDescriptionOpen((prev) => !prev);
+      setLoading(false);
+      toggleDescription(name, index);
+    }, 100);
   };
+
+  const transitions = useTransition(isDescriptionOpen, {
+    from: { opacity: 0, height: 0 },
+    enter: { opacity: 1, height: "auto" },
+    leave: { opacity: 0, height: 0 },
+    config: { duration: 300 },
+  });
 
   return (
     <li className={`content`} onClick={handleDescriptionToggle}>
@@ -36,11 +50,17 @@ export const ItemServices = ({
           {el.price}
         </p>
       </div>
-      {isDescriptionOpen && (
-        <div className="description-wrap">
-          <p className="description-subtitle">{el.description}</p>
-          {el.age && <p className="description-age">Вікова група: {el.age}</p>}
-        </div>
+      {transitions((style, item) =>
+        item ? (
+          <animated.div className="description-wrap" style={style}>
+            <p className="description-subtitle">{el.description}</p>
+            {el.age && (
+              <p className="description-age">Вікова група: {el.age}</p>
+            )}
+          </animated.div>
+        ) : (
+          isLoading && <div className="loader-icon loading-color"></div>
+        )
       )}
     </li>
   );
