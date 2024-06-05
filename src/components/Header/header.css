@@ -13,6 +13,45 @@ p {
     padding: 8px 20px;
   }
 }
+.toolbar {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu-desk {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  width: 130px;
+  height: 60px;
+  display: flex;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.list-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_list_item {
+  margin-right: 20px;
+}
+
+.list_item_title {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 .title-header-desc {
   font-family: "Lumanosimo", cursive;
   font-weight: 700;
@@ -56,7 +95,7 @@ p {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: -4px;
   width: 0;
   height: 3px;
   background-image: linear-gradient(to right, #00ff00, #00bfff);

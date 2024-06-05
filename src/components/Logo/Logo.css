@@ -1,0 +1,27 @@
+.logo {
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  gap: 10px;
+}
+
+.logo-icon {
+  color: #ff0000ca;
+}
+
+.logo-icon svg {
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.logo-text {
+  width: 100px;
+}
+
+.title-header-desc.art {
+  color: #0077ff;
+}
+
+.title-header-desc.school {
+  color: #c4da00;
+}

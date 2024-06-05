@@ -1,13 +1,7 @@
 import React, { useState } from "react";
-import "../style/services.css";
+import "./services.css";
 
-export const ItemServices = ({
-  index,
-  el,
-  isOpen,
-  toggleDescription,
-  name,
-}) => {
+export const ServiceItem = ({ index, el, isOpen, toggleDescription, name }) => {
   const [isDescriptionOpen, setDescriptionOpen] = useState(
     isOpen[name + index]
   );

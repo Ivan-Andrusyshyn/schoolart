@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { contentServices } from "./contenServices";
-import "../style/services.css";
+import { contentServices } from "./content";
+import "./services.css";
 import { nanoid } from "nanoid";
-import { ItemServices } from "./ItemServices";
-export const Services = () => {
+import { ServiceItem } from "./ServiceItem";
+
+export const ServiceList = () => {
   const [isOpen, setIsOpen] = useState({});
   const toggleDescription = (serviceType, index) => {
     setIsOpen((prevState) => ({
@@ -11,6 +12,7 @@ export const Services = () => {
       [serviceType + index]: !prevState[serviceType + index],
     }));
   };
+
   return (
     <div className="services-section" id="services">
       <h2 className="section-title">Послуги та ціни</h2>
@@ -20,7 +22,7 @@ export const Services = () => {
 
           {contentServices.masterClassPottery.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <ItemServices
+              <ServiceItem
                 el={el}
                 index={index}
                 isOpen={isOpen}
@@ -34,7 +36,7 @@ export const Services = () => {
           <h3 className="subtitle-services">Майстер-клас з живопису</h3>
           {contentServices.masterClassPainting.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <ItemServices
+              <ServiceItem
                 el={el}
                 index={index}
                 isOpen={isOpen}
@@ -48,7 +50,7 @@ export const Services = () => {
           <h3 className="subtitle-services">Заняття для дітей в студії</h3>
           {contentServices.abonimentServices.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <ItemServices
+              <ServiceItem
                 el={el}
                 index={index}
                 isOpen={isOpen}
@@ -59,10 +61,10 @@ export const Services = () => {
           ))}
         </ul>
         <ul className="price-list">
-          <h3 className="subtitle-services">Онлайн заняття</h3>
+          <h3 className="subtitle-services">Онлайн заняття з малювання</h3>
           {contentServices.onlineServices.map((el, index) => (
             <React.Fragment key={nanoid()}>
-              <ItemServices
+              <ServiceItem
                 el={el}
                 index={index}
                 isOpen={isOpen}

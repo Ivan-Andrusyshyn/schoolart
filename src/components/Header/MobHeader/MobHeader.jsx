@@ -11,15 +11,18 @@ import "../header.css";
 import { Link } from "react-router-dom";
 
 import { MenuLinks } from "./MenuLinks";
+
 export const MobHeader = () => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [colorActual, setColorActual] = useState("#fff");
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
   useEffect(() => {
     setColorActual("#c4da00");
   }, [anchorEl]);
+
   return (
     <div className="app-container">
       <Typography
@@ -28,8 +31,8 @@ export const MobHeader = () => {
         style={{ fontSize: 24, color: "#ffffff", display: "flex", gap: 10 }}
       >
         <Link to="/">
-          <div style={{ width: 100, height: 60, display: "flex" }}>
-            <img src={logo} alt="" style={{ width: "100%" }} />
+          <div className="logo-container">
+            <img src={logo} alt="" />
           </div>
         </Link>
       </Typography>

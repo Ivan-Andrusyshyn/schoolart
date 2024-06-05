@@ -1,11 +1,11 @@
 import { Hero } from "../../DesktopComponents/Hero/Hero";
-import { Services } from "../../DesktopComponents/Services/Services";
+import { ServiceList } from "../../../schoolServices/ServiceList";
 
 export const Home = () => {
   return (
     <>
       <Hero />
-      <Services />;
+      <ServiceList />;
     </>
   );
 };

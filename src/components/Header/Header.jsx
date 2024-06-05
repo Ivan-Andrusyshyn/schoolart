@@ -5,36 +5,21 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import "./header.css";
 import { MobHeader } from "./MobHeader/MobHeader";
 import logo from "../../image/photo_2023-07-19_22-26-15.jpg";
+
 export const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <div className="header-section">
-      <Toolbar
-        style={{
-          maxWidth: 1180,
-          margin: "0 auto",
-          display: "flex",
-          justifyContent: "space-between",
-        }}
-      >
+      <Toolbar className="toolbar">
         {isMobile ? (
           <MobHeader />
         ) : (
           <div className="nav-menu-desk">
-            <Typography
-              variant="h6"
-              component="div"
-              style={{
-                fontSize: 24,
-                color: "#ffffff",
-                display: "flex",
-                gap: 10,
-              }}
-            >
-              <div style={{ width: 130, height: 60, display: "flex" }}>
-                <img src={logo} alt="" style={{ width: "100%" }} />
+            <Typography variant="h6" component="div">
+              <div className="logo-container">
+                <img src={logo} alt="Logo" />
               </div>
             </Typography>
 

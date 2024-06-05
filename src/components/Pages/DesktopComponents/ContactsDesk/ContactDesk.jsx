@@ -1,7 +1,8 @@
 import React from "react";
-import "../style/contactDesk.css";
-import { MapLocal } from "../../../UI/SocialContacts/MapLocal";
-import { SocialLinks } from "../../../UI/SocialContacts/SocialLinks";
+import "../styles/contactDesk.css";
+import { MapLocal } from "../../../SocialContacts/MapLocal";
+import { SocialLinks } from "../../../SocialContacts/SocialLinks";
+
 export const ContactsDesk = () => {
   return (
     <div id="contacts" className="contacts-section">

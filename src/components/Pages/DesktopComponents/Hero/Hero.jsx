@@ -1,9 +1,12 @@
-import "../style/Hero.css";
-import "../style/slider.css";
 import React, { useEffect, useState } from "react";
+
+import "../styles/Hero.css";
+import "../styles/slider.css";
+
 import { slides } from "./slides";
 import { useSwipeable } from "react-swipeable";
 import { nanoid } from "nanoid";
+
 export const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {

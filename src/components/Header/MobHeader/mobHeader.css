@@ -2,6 +2,18 @@
   color: #ffffff;
   margin: 0;
 }
+
+.logo-container {
+  width: 100px;
+  height: 60px;
+
+  display: flex;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
 .app-container {
   display: flex;
   width: 100%;

@@ -1,8 +1,8 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./contacts.css";
-import { MapLocal } from "../../../UI/SocialContacts/MapLocal";
-import { SocialLinksMob } from "../../../UI/SocialContacts/SocialLinksMob";
+import { MapLocal } from "../../../SocialContacts/MapLocal";
+import { SocialLinksMob } from "../../../SocialContacts/SocialLinksMob";
 
 export const Contacts = () => {
   const mapUrl =
